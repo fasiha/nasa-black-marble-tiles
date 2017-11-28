@@ -20,5 +20,3 @@ $ gdal2tiles.py -e -r cubic  -w all -p mercator -a 0,0,0 --config GDAL_CACHEMAX 
 (The `GDAL_CACHEMAX` configuration lets GDAL use 4 gigabytes of working memory, which may help runtime.)
 
 This resulted in a maximum zoom level of 7 (i.e., zoom levels 0 through 7 are available).
-
-(Note that gdal2tiles has the opposite `x` vs `y` convention as Google and OpenStreetMap (see [AndreJ's answer on GIS StackExchange](https://gis.stackexchange.com/a/66993/8623), so in Cesium I use the `flipxy` flag when loading this tileset.)
